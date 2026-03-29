@@ -1,0 +1,23 @@
+{
+  "name": "allbrowsersvibes",
+  "version": "1.0.0",
+  "description": "Vibe-coded scripts for building the AllBrowsers blog.",
+  "homepage": "https://github.com/jmedley/AllBrowsersVibes#readme",
+  "bugs": {
+    "url": "https://github.com/jmedley/AllBrowsersVibes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmedley/AllBrowsersVibes.git"
+  },
+  "license": "CC-BY-4.0",
+  "author": "Joseph Medley",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "test"
+  }
+}
