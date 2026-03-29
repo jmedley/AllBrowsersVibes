@@ -1,0 +1,205 @@
+{
+  "browsers": [
+    {
+      "name": "Arc",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "Command bar AI",
+      "newsUrls": [
+        "https://browsercompany.substack.com/"
+      ]
+    },
+    {
+      "name": "Atlas",
+      "engine": "Blink",
+      "owner": "ChatGPT",
+      "agentic": true,
+      "AIAssistant": "ChatGPT",
+      "newsUrls": [
+        ""
+      ]
+    },
+    {
+      "name": "Brave",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "Leo",
+      "newsUrls": [
+        "https://brave.com/blog/"
+      ]
+    },
+    {
+      "name": "BrowserOS",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [],
+      "pullRequests": [
+        "https://github.com/browseros-ai/BrowserOS/pulls"
+      ]
+    },
+    {
+      "name": "Chrome",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": true,
+      "AIAssistant": "Comet",
+      "newsUrls": [
+        "https://developer.chrome.com/blog"
+      ]
+    },
+    {
+      "name": "Comet",
+      "engine": "Blink",
+      "owner": "Perplexity",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://www.perplexity.ai/hub"
+      ]
+    },
+    {
+      "name": "Dia",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": true,
+      "AIAssistant": "Command bar AI",
+      "newsUrls": [
+        "https://browsercompany.substack.com/"
+      ]
+    },
+    {
+      "name": "DuckDuckGo Browser",
+      "engine": "Blink, DevKit",
+      "owner": "https://spreadprivacy.com/tag/duckduckgo",
+      "agentic": false,
+      "AIAssistant": "DuckAssist",
+      "newsUrls": [
+        ""
+      ]
+    },
+    {
+      "name": "Edge",
+      "engine": "Blink",
+      "owner": "Microsoft",
+      "agentic": true,
+      "AIAssistant": "Copilot",
+      "newsUrls": [
+          "https://devblogs.microsoft.com/"
+      ],
+      "notes": [
+        "Uses Copilot."
+      ]
+    },
+    {
+      "name": "Epic",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://blog.epicbrowser.com/"
+      ]
+    },
+    {
+      "name": "Fellou",
+      "engine": "Eko 2.0",
+      "owner": "",
+      "agentic": true,
+      "AIAssistant": "Fellou CE",
+      "newsUrls": [
+        "https://fellou.ai/blog/"
+      ]
+    },
+    {
+      "name": "Firefox",
+      "engine": "Gecko",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://blog.mozilla.org/en/"
+      ]
+    },
+    {
+      "name": "Maxthon",
+      "engine": "blink",
+      "owner": "Jeff Chen",
+      "agentic": false,
+      "AIAssistant": "AIChat",
+      "hide": true,
+      "newsUrls": [
+        ""
+      ],
+      "notes": [
+        "An AI-powered browser built with Web3 in mind."
+      ]
+    },
+    {
+      "name": "Opera/Opera One",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "Aria",
+      "newsUrls": [
+        "https://blogs.opera.com/news/"
+      ],
+      "notes": [
+        "Opera One is the new version of Opera, with AI features."
+      ]
+    },
+    {
+      "name": "Safari",
+      "engine": "WebKit",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://developer.apple.com/documentation/safari-release-notes"
+      ]
+    },
+    {
+      "name": "Signma",
+      "engine": "WebKit",
+      "owner": "Sigma",
+      "agentic": true,
+      "AIAssistant": "SigmaGPT",
+      "newsUrls": [
+        "https://www.sigmabrowser.com/blog"
+      ]
+    },
+    {
+      "name": "Tor",
+      "engine": "Gecko",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://blog.torproject.org/"
+      ]
+    },
+    {
+      "name": "Vivaldi",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://vivaldi.com/blog/"
+      ]
+    },
+    {
+      "name": "Zen",
+      "engine": "Gecko",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://zen-browser.app/release-notes/"
+      ]
+    }
+  ]
+}

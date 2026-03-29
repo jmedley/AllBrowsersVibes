@@ -1,0 +1,52 @@
+{
+  "sites": [
+    {
+      "SiteName": "Ars Technica",
+      "newsUrls": [
+        "https://arstechnica.com/ai/"
+      ]
+    },
+    {
+      "SiteName": "Medium",
+      "newsUrls": [
+        "https://medium.com/artificial-corner"
+      ]
+    },
+    {
+      "SiteName": "PCMag",
+      "newsUrls": [
+        "https://www.pcmag.com/categories/browsers"
+      ]
+    },
+    {
+      "SiteName": "Scott Jehl",
+      "newsUrls": [
+        "https://scottjehl.com/posts/"
+      ]
+    },
+    {
+      "SiteName": "Seraphic",
+      "newsUrls": [
+        "https://seraphicsecurity.com/learn/ai-browser/"
+      ]
+    },
+    {
+      "SiteName": "TechCrunch",
+      "newsUrls": [
+        "https://techcrunch.com/tag/artificial-intelligence/"
+      ]
+    },
+    {
+      "SiteName": "The Verge",
+      "newsUrls": [
+        "https://www.theverge.com/ai-artificial-intelligence"
+      ]
+    },
+    {
+      "SiteName": "Wired",
+      "newsUrls": [
+        "https://www.wired.com/"
+      ]
+    }
+  ]
+}
