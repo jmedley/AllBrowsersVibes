@@ -7,6 +7,12 @@
       ]
     },
     {
+      "SiteName": "CNET",
+      "newsUrls": [
+        "https://www.cnet.com/topics/ai/best-ai-tools/"
+      ]
+    },
+    {
       "SiteName": "Medium",
       "newsUrls": [
         "https://medium.com/artificial-corner"

@@ -31,6 +31,16 @@
       ]
     },
     {
+      "name": "Browserbase",
+      "engine": "",
+      "owner": "",
+      "agentic": true,
+      "AIAssistant": "",
+      "newsUrls": [
+        ""
+      ]
+    },
+    {
       "name": "BrowserOS",
       "engine": "Blink",
       "owner": "",
@@ -88,7 +98,7 @@
       "agentic": true,
       "AIAssistant": "Copilot",
       "newsUrls": [
-          "https://devblogs.microsoft.com/"
+        "https://devblogs.microsoft.com/"
       ],
       "notes": [
         "Uses Copilot."
@@ -162,7 +172,17 @@
       ]
     },
     {
-      "name": "Signma",
+      "name": "Samsung",
+      "engine": "Blink",
+      "owner": "Samsung",
+      "agentic": true,
+      "AIAssistant": "Bixby",
+      "newsUrls": [
+        "https://developer.samsung.com/blog/en"
+      ]
+    },
+    {
+      "name": "Sigma",
       "engine": "WebKit",
       "owner": "Sigma",
       "agentic": true,
