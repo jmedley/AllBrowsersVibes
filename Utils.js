@@ -74,6 +74,19 @@ function createHtmlLink(path, linkText) {
 }
 
 /**
+ * Strips comments from JSONC content to make it valid JSON.
+ * @param {string} jsonc - The JSONC string.
+ * @returns {string} The JSON string without comments.
+ */
+function stripJsoncComments(jsonc) {
+  // Remove // comments (lines starting with optional whitespace then //)
+  jsonc = jsonc.replace(/^\s*\/\/.*$/gm, '');
+  // Remove /* */ comments
+  jsonc = jsonc.replace(/\/\*[\s\S]*?\*\//g, '');
+  return jsonc;
+}
+
+/**
  * PRIVATE FUNCTIONS
  */
 
@@ -91,6 +104,9 @@ function escapeHtml(str) {
 // .then(console.log)
 // .catch(console.error);
 
-export { buildFileLinksList };
-export { convertToPath };
-export { createHtmlLink };
+module.exports = {
+  buildFileLinksList,
+  convertToPath,
+  createHtmlLink,
+  stripJsoncComments,
+};

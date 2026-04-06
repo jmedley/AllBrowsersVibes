@@ -1,52 +1,60 @@
-const { expect } = require("chai");
-const NewsSources = require("../NewsSources");
+const assert = require('assert');
+const NewsSources = require('../NewsSources');
 
-describe("NewsSources", () => {
-  let newsSources;
+describe('NewsSources', function() {
+  let ns;
 
-  beforeEach(() => {
-    newsSources = new NewsSources();
+  beforeEach(function() {
+    ns = new NewsSources('./data/news-sources.jsonc');
   });
 
-  describe("constructor", () => {
-    it("should create a new instance of NewsSources", () => {
-      expect(newsSources).to.be.instanceOf(NewsSources);
-    });
-  });
-
-  describe("GetAll()", () => {
-    it("should be a function", () => {
-      expect(newsSources.GetAll).to.be.a("function");
-    });
-
-    it("should return an array of news sources", () => {
-      const result = newsSources.GetAll();
-      // Update this assertion once the method is implemented
-      expect(result).to.be.an("array");
+  describe('#GetAll()', function() {
+    it('should return an array of news sources', function() {
+      const sources = ns.GetAll();
+      assert(Array.isArray(sources));
+      assert(sources.length > 0);
+      sources.forEach(source => {
+        assert(source.hasOwnProperty('SiteName'));
+        assert(source.hasOwnProperty('newsUrls'));
+        assert(Array.isArray(source.newsUrls));
+      });
     });
   });
 
-  describe("GetURL(forSource)", () => {
-    it("should be a function", () => {
-      expect(newsSources.GetURL).to.be.a("function");
-    });
-
-    it("should return a URL for a given source", () => {
-      // Update this test with actual source names once implemented
-      const result = newsSources.GetURL("BBC");
-      expect(result).to.be.a("string");
+  describe('#GetAllURLs()', function() {
+    it('should return an array of all URLs', function() {
+      const urls = ns.GetAllURLs();
+      assert(Array.isArray(urls));
+      assert(urls.length > 0);
+      urls.forEach(url => {
+        assert.strictEqual(typeof url, 'string');
+        assert(url.startsWith('https://'));
+      });
     });
   });
 
-  describe("GetSourceName(forURL)", () => {
-    it("should be a function", () => {
-      expect(newsSources.GetSourceName).to.be.a("function");
+  describe('#GetURL(forSource)', function() {
+    it('should return URL for known source', function() {
+      const url = ns.GetURL('Ars Technica');
+      assert.strictEqual(typeof url, 'string');
+      assert(url.startsWith('https://'));
     });
 
-    it("should return a source name for a given URL", () => {
-      // Update this test with actual URLs once implemented
-      const result = newsSources.GetSourceName("https://www.bbc.com");
-      expect(result).to.be.a("string");
+    it('should return undefined for unknown source', function() {
+      const url = ns.GetURL('Unknown');
+      assert.strictEqual(url, undefined);
+    });
+  });
+
+  describe('#GetSourceName(forURL)', function() {
+    it('should return source name for known URL', function() {
+      const name = ns.GetSourceName('https://arstechnica.com/ai/');
+      assert.strictEqual(name, 'Ars Technica');
+    });
+
+    it('should return undefined for unknown URL', function() {
+      const name = ns.GetSourceName('https://unknown.com');
+      assert.strictEqual(name, undefined);
     });
   });
 });
