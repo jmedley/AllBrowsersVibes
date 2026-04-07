@@ -17,7 +17,8 @@
       "agentic": true,
       "AIAssistant": "ChatGPT",
       "newsUrls": [
-        ""
+        "https://openai.com/index/building-chatgpt-atlas/",
+        "https://openai.com/news/company-announcements/"
       ]
     },
     {

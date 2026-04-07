@@ -13,16 +13,18 @@ if (!command) {
   process.exit(1);
 }
 
+const browserSources = new BrowserSources('data/browser-sources.jsonc');
+
 switch (command) {
   case 'news': {
     const newsSources = new NewsSources('data/news-sources.jsonc');
-    const urls = newsSources.GetAllURLs();
+    let urls = newsSources.GetAllURLs();
+    urls = [...urls, ...browserSources.GetAllURLs()];
     console.log(urls.join(', '));
     break;
   }
 
   case 'browsers': {
-    const browserSources = new BrowserSources('data/browser-sources.jsonc');
     const urls = browserSources.GetAllURLs();
     console.log(urls.join(', '));
     break;

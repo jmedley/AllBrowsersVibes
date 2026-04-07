@@ -18,7 +18,8 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha tests/*.js"
+    "test": "mocha tests/*.js",
+    "data": "node dataSources.js"
   },
   "devDependencies": {
     "mocha": "^11.7.5"
