@@ -30,7 +30,7 @@ class NewsSources {
    * Retrieves all available news sources.
    * @returns {Array} An array of all news sources.
    */
-  GetAll() {
+  getAll() {
     return this.data.sites;
   }
 
@@ -38,7 +38,7 @@ class NewsSources {
    * Retrieves all available URLs.
    * @returns {Array} An array of all URLs.
    */
-  GetAllURLs() {
+  getAllURLs() {
     return this.data.sites.flatMap(site => site.newsUrls);
   }
 
@@ -47,7 +47,7 @@ class NewsSources {
    * @param {string} forSource - The name of the news source.
    * @returns {string|undefined} The URL for the specified source, or undefined if not found.
    */
-  GetURL(forSource) {
+  getURL(forSource) {
     const site = this.data.sites.find(s => s.SiteName === forSource);
     return site ? site.newsUrls[0] : undefined;
   }
@@ -57,7 +57,7 @@ class NewsSources {
    * @param {string} forURL - The URL of the news source.
    * @returns {string|undefined} The name of the source for the specified URL, or undefined if not found.
    */
-  GetSourceName(forURL) {
+  getSourceName(forURL) {
     const site = this.data.sites.find(s => s.newsUrls.includes(forURL));
     return site ? site.SiteName : undefined;
   }

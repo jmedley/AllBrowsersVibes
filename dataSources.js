@@ -18,14 +18,14 @@ const browserSources = new BrowserSources('data/browser-sources.jsonc');
 switch (command) {
   case 'news': {
     const newsSources = new NewsSources('data/news-sources.jsonc');
-    let urls = newsSources.GetAllURLs();
-    urls = [...urls, ...browserSources.GetAllURLs()];
+    let urls = newsSources.getAllURLs();
+    urls = [...urls, ...browserSources.getAllURLs()];
     console.log(urls.join(', '));
     break;
   }
 
   case 'browsers': {
-    const urls = browserSources.GetAllURLs();
+    const urls = browserSources.getAllURLs();
     console.log(urls.join(', '));
     break;
   }

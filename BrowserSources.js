@@ -1,4 +1,4 @@
-const { stripJsoncComments } = require('./Utils');
+const { stripJsoncComments } = require("./Utils");
 
 /**
  * Manages browser sources and provides methods to retrieve source information.
@@ -11,18 +11,18 @@ class BrowserSources {
    */
   constructor(filePath) {
     if (!filePath) {
-      throw new Error('File path is required');
+      throw new Error("File path is required");
     }
-    const fs = require('fs');
+    const fs = require("fs");
     if (!fs.existsSync(filePath)) {
-      throw new Error('File does not exist');
+      throw new Error("File does not exist");
     }
-    const content = fs.readFileSync(filePath, 'utf8');
+    const content = fs.readFileSync(filePath, "utf8");
     const stripped = stripJsoncComments(content);
     try {
       this.data = JSON.parse(stripped);
     } catch (e) {
-      throw new Error('Invalid JSONC');
+      throw new Error("Invalid JSONC");
     }
   }
 
@@ -30,7 +30,7 @@ class BrowserSources {
    * Retrieves all available browser sources.
    * @returns {Array} An array of all browser sources.
    */
-  GetAll() {
+  getAll() {
     return this.data.browsers;
   }
 
@@ -38,8 +38,8 @@ class BrowserSources {
    * Retrieves all available URLs.
    * @returns {Array} An array of all URLs.
    */
-  GetAllURLs() {
-    return this.data.browsers.flatMap(browser => browser.newsUrls);
+  getAllURLs() {
+    return this.data.browsers.flatMap((browser) => browser.newsUrls);
   }
 
   /**
@@ -47,8 +47,8 @@ class BrowserSources {
    * @param {string} forSource - The name of the browser source.
    * @returns {string|undefined} The URL for the specified source, or undefined if not found.
    */
-  GetURL(forSource) {
-    const browser = this.data.browsers.find(b => b.name === forSource);
+  getURL(forSource) {
+    const browser = this.data.browsers.find((b) => b.name === forSource);
     return browser ? browser.newsUrls[0] : undefined;
   }
 
@@ -57,8 +57,8 @@ class BrowserSources {
    * @param {string} forURL - The URL of the browser source.
    * @returns {string|undefined} The name of the source for the specified URL, or undefined if not found.
    */
-  GetSourceName(forURL) {
-    const browser = this.data.browsers.find(b => b.newsUrls.includes(forURL));
+  getSourceName(forURL) {
+    const browser = this.data.browsers.find((b) => b.newsUrls.includes(forURL));
     return browser ? browser.name : undefined;
   }
 }
