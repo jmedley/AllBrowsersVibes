@@ -56,4 +56,20 @@ describe("BrowserSources", function () {
       assert.strictEqual(name, undefined);
     });
   });
+
+  describe("#getBrowserNames()", function () {
+    it("should return an array of browser names", function () {
+      const names = bs.getBrowserNames();
+      assert(Array.isArray(names));
+      assert(names.length > 0);
+      names.forEach((name) => {
+        assert.strictEqual(typeof name, "string");
+      });
+    });
+
+    it("should include known browser names", function () {
+      const names = bs.getBrowserNames();
+      assert(names.includes("Arc"));
+    });
+  });
 });

@@ -4,7 +4,7 @@ const BrowserSources = require('./BrowserSources');
 
 function showUsage() {
   console.log('Usage: node cli.js <command>');
-  console.log('Commands: news, browsers');
+  console.log('Commands: news, browsers, browserNames');
 }
 
 const command = process.argv[2];
@@ -27,6 +27,12 @@ switch (command) {
   case 'browsers': {
     const urls = browserSources.getAllURLs();
     console.log(urls.join(', '));
+    break;
+  }
+
+  case 'browserNames': {
+    const names = browserSources.getBrowserNames();
+    console.log(names.join(', '));
     break;
   }
 

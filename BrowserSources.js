@@ -61,6 +61,14 @@ class BrowserSources {
     const browser = this.data.browsers.find((b) => b.newsUrls.includes(forURL));
     return browser ? browser.name : undefined;
   }
+  
+  /**
+   * Retrieves all browser source names.
+   * @returns {Array} An array of browser source names.
+   */
+  getBrowserNames() {
+    return this.data.browsers.map(browser => browser.name);
+  }
 }
 
 module.exports = BrowserSources;
