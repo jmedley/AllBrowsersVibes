@@ -12,6 +12,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 # Misc
 .DS_Store
 package-lock.json
+*.med
 
 # Runtime data
 pids
