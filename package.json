@@ -19,7 +19,8 @@
   },
   "scripts": {
     "test": "mocha tests/*.js",
-    "data": "node dataSources.js"
+    "data": "node dataSources.js",
+    "news": "node dataSources.js news"
   },
   "devDependencies": {
     "mocha": "^11.7.5"
