@@ -1,6 +1,46 @@
 {
   "browsers": [
     {
+      "name": "AdBlock Browser",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://blog.adblockplus.org/blog"
+      ]
+    },
+    {
+      "name": "Agregore",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://agregore.mauve.moe/blog/"
+      ]
+    },
+    {
+      "name": "Aloha",
+      "engine": "Blink",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://alohabrowser.com/blog/"
+      ]
+    },
+    {
+      "name": "Anglefish",
+      "engine": "QtWebEngine",
+      "owner": "",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://apps.kde.org/en-gb/angelfish/"
+      ]
+    },
+    {
       "name": "Arc",
       "engine": "Blink",
       "owner": "",
@@ -99,7 +139,8 @@
       "agentic": true,
       "AIAssistant": "Copilot",
       "newsUrls": [
-        "https://devblogs.microsoft.com/"
+        "https://devblogs.microsoft.com/",
+        "https://blogs.windows.com/msedgedev"
       ],
       "notes": [
         "Uses Copilot."
@@ -190,6 +231,16 @@
       "AIAssistant": "SigmaGPT",
       "newsUrls": [
         "https://www.sigmabrowser.com/blog"
+      ]
+    },
+    {
+      "name": "Silk",
+      "engine": "Chromium",
+      "owner": "Amazon",
+      "agentic": false,
+      "AIAssistant": "",
+      "newsUrls": [
+        "https://docs.aws.amazon.com/silk"
       ]
     },
     {
